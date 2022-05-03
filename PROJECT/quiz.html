@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="quiz.css">
+    <h1>QUIZ!!</h1>
+
+</head>
+
+<body>
+    <p>
+        <h2>1.</h2><br>An array is a container object that holds a fixed number of values of a single type. <br> To create an array in C, we can do int arr[n];<br>. Here, arr, is a variable array which holds up to integers.<br> The above array is a static
+        array that has memory allocated at compile time. A dynamic array can be created in C, using the malloc function and the memory is allocated on the heap at runtime. To create an integer array, of size , int *arr = (int*)malloc(n * sizeof(int)),
+        where points to the base address of the array. When you have finished with the array, use free(arr) to deallocate the memory. In this challenge, create an array of size dynamically, and read the values from stdin.<br> Iterate the array calculating
+        the sum of all elements.<br> Print the sum and free the memory where the array is stored. While it is true that you can sum the elements as they are read, without first storing them to an array,<br> but you will not get the experience working
+        with an array. Efficiency will be required later.
+    </p><br>
+    <hr>
+    <p>
+        <h2>2.</h2><br>Snow Howler is the librarian at the central library of the city of HuskyLand. <br> He must handle requests which come in the following forms:<br> 1 x y : Insert a book with pages at the end of the shelf.<br> 2 x y : Print the number
+        of pages in the book on the shelf.<br> 3 x : Print the number of books on the shelf.<br> Snow Howler has got an assistant, Oshie, provided by the Department of Education.
+        <br> Although inexperienced, Oshie can handle all of the queries of types 2 and 3. Help Snow Howler deal with all the queries of type 1.<br> Oshie has used two arrays:<br>
+        <hr>
+        <p>
+            <h2>3.</h2><br>To sort a given array of strings into lexicographically increasing order or into an order in which the string with the lowest length appears first, a sorting function with a flag indicating the type of comparison strategy can be
+            written. The disadvantage with doing so is having to rewrite the function for every new comparison strategy.
+
+            <br> A better implementation would be to write a sorting function that accepts a pointer to the function that compares each pair of strings. Doing this will mean only passing a pointer to the sorting function with every new comparison strategy.
+
+            <br> Given an array of strings, you need to implement a function which sorts the strings according to a comparison function,<br> i.e, you need to implement the function : void string_sort(const char **arr,const int cnt, int (*cmp_func)(const
+            char* a, const char* b))<br>{ } The arguments passed to this function are: an array of strings : <br> length of string array: <br> pointer to the string comparison function: <br> You also need to implement the following four string comparison
+            functions:<br> to sort the strings in lexicographically non-decreasing order. <br> to sort the strings in lexicographically non-increasing order. <br> to sort the strings in non-decreasing order of the number of distinct characters present
+            in them. <br> If two strings have the same number of distinct characters present in them, then the lexicographically smaller string should appear first. to sort the strings in non-decreasing order of their lengths. If two strings have the
+            same length <br>, then the lexicographically smaller string should appear first. Input Format <br> Input Format <br> Input Format <br> You just need to complete the function string\_sort and implement the four string comparison functions.
+            Input Format <br> Constraints No. of Strings Input Format <br> You have to write your own sorting function and you cannot use the inbuilt function <br> The strings consists of lower-case English Alphabets only. <br> Output Format <br>
+        </p>
+        <hr>
+        <p>
+            <h2>4.</h2>
+            <br>Strings are usually ordered in lexicographical order. <br> That means they are ordered by comparing their leftmost different characters.<br> For example, because . Also because . If one string is an exact prefix of the other it is lexicographically
+            smaller,<br>
+            <br><br> e.g., . Given an array of strings sorted in lexicographical order, print all of its permutations in strict lexicographical order.<br> If two permutations look the same, only print one of them. See the 'note' below for an example.<br>            Complete the function next_permutation which generates the permutations in the described order.<br> For example, . The six permutations in correct order are:<br> ab bc cd<br> ab cd bc<br> bc ab cd<br> bc cd ab<br> cd ab bc<br> cd bc ab<br>            Note: There may be two or more of the same string as elements of .<br> For example, . Only one instance of a permutation where all elements match should be printed. <br> In other words, if , then print either or but not both.<br> A three element
+            array having three distinct elements has six permutations as shown above. <br> In this case, there are three matching pairs of permutations where and are switched. <br> We only print the three visibly unique permutations:<br>
+        </p>
+        <hr>
+        <hr>
+
+    </p>
+    </p>
+</body>
+
+</html>
